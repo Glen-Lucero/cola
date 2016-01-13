@@ -12,8 +12,7 @@ html, body{
 /*---- Main Navigation ----*/
 .navbar-default.coke-main-nav{
 	border-radius:0px;
-	background-color:#fff;
-	border-bottom-color: #000;
+	background-color:#fefefe;
 	position: fixed;
 	width: 100%;
 	z-index: 100;
@@ -24,11 +23,11 @@ html, body{
 }
 .coke-main-nav .navbar-right > li > a {
     color: #555;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
 }
 .coke-main-nav .navbar-right > li > a:hover{
-	color:#c12;
+	color:#E50000;
 }
 
 /*-------- Content --------*/
@@ -66,7 +65,7 @@ html, body{
 	margin-top: 50px;
 }
 .promo .container{
-	padding-top: 180px;
+	padding-top: 160px;
 }
 .promo .container h1{
 	text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.8);
@@ -75,19 +74,57 @@ html, body{
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
 	font-size:15px;
 }
+.promo .btn-reg{
+	background-color: transparent;
+	border:2px solid #fff;
+	border-radius: 2px;
+	color:#fff;
+	-webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+}
+.promo .btn-reg:hover{
+	background-color: #c53232;
+}
 
+/*--- Banner --*/
+.banner{
+	position: relative;
+	background-color: #f9f9f9;
+	color: #7792B4;
+	padding: 20px;
+	border-bottom: 1px solid #e7e7e7;
+}
+.banner p{
+	padding-top:10px;
+}
+.banner .col-border{
+	border-left: 1px dashed #7792B4;
+	border-right: 1px dashed #7792B4;
+}
+.banner .col-border-r{
+	border-right: 1px dashed #7792B4;
+}
 /*--- Info Section ---*/
 .info-section{
 	position: relative;
-	background-color:#F6F6DF;
-	height: 500px; /*For Testing, Change this later*/
+	background-color: #FDFDFD;
+	padding:50px;
+}
+.info-section .container img{
+	width:100%;
 }
 
 /*--- Footer Section --*/
 .footer{
 	position: relative;
 	background-color: #aaa;
-	height:50px;
+	padding:10px;
+	font-size:12px;
+	color:#fff;
+}
+.footer p{
+	margin:0px;
+	padding:0px;
 }
 
 /*--- Media Queries --*/
@@ -95,7 +132,13 @@ html, body{
 @media (max-width: 767px) {
 }
 /* Tablet sized screens (768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 992px) {
+	.banner .col-border{
+		border:none;
+	}
+	.banner .col-border-r{
+		border:none;
+	}
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {

@@ -12,7 +12,7 @@
 		<!-- Third Party Styles -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 		<link rel='stylesheet' href='assets/plugins/bootstrap-3.3.6/css/bootstrap.min.css'>
-		<link rel='stylesheet' href='assets/pugins/font-awesome-4.5.0/css/font-awesome.min.css'>
+		<link rel='stylesheet' href='assets/plugins/font-awesome-4.5.0/css/font-awesome.min.css'>
 
 		<!-- Custom Styles -->
 		<link rel='stylesheet' href='assets/css/main.css'>
@@ -63,19 +63,53 @@
 		<div class='bg-main-img'></div>
 		<div class='bg-main-wrapper'></div>
 		<div class='promo'>
-			<div class="container">
+			<div class="container text-center">
 				<h1 class='text-center'>Promo Tagline</h1>
 				<p class='text-center'>
 					Ei mei platonem senserit, legendos iracundia repudiandae ad qui, sed oratio dicant ut. 
 				</p>
+				<button class='btn btn-lg btn-reg'>Register</button>
 			</div>	
 		</div><!-- /.promo -->
+		<div class='banner'>
+			<div class='container'>
+				<div class='col-md-3 col-sm-6 text-center'>
+					<i class="fa fa-4x fa-cloud"></i>
+					<p>Cloud Service</p>
+				</div>
+				<div class='col-md-3 col-sm-6 text-center col-border'>
+					<i class="fa fa-4x fa-cubes"></i>
+					<p>Strong Infastructure</p>
+				</div>
+				<div class='col-md-3 col-sm-6 text-center col-border-r'>
+					<i class="fa fa-4x fa-globe"></i>
+					<p>Access From Anywhere</p>
+				</div>
+				<div class='col-md-3 col-sm-6 text-center'>
+					<i class="fa fa-4x fa-rocket"></i>
+					<p>Expontential Growth</p>
+				</div>
+			</div>
+		</div><!-- /.banner-->
 		<div class='info-section'>
 			<div class='container'>
+				<div class='col-sm-6 text-left'>
+					<h2 class='text-left'>Description Title</h2>
+					<p>Ei mei platonem senserit, legendos iracundia repudiandae ad qui, sed oratio dicant ut. Ei mei platonem senserit, legendos iracundia repudiandae ad qui, sed oratio dicant ut. Ei mei platonem senserit, legendos iracundia repudiandae ad qui, sed oratio dicant ut. </p>
+				</div>
+				<div class='col-sm-6'>
+					<img alt='Doors' src='assets/img/office-door1.jpg'/>
+				</div>
 			</div><!--/.container-->
 		</div><!-- /.info-section -->
 		<div class='footer'>
 			<div class='container'>
+				<div class='col-xs-6 text-left'>
+					<p>&copy; Lucero, LLC - All Rights Reserved</p>
+				</div>
+				<div class='col-xs-6 text-right'>
+					<p>Powered by Lucero, LLC</p>
+				</div>
 			</div>
 		</div><!--/.footer-->
 	</body>
