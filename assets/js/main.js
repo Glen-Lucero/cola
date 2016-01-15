@@ -76,7 +76,7 @@ $(document).ready(function(){
 							return false; //Use this to prevent the modal from closing
 						}
 						else{
-							window.location = "file:///Users/glenlucero/Coca-Cola/orgs/coca-cola/index.html";
+							window.location = "file:///Users/glenlucero/Lucero/orgs/coca-cola/index.html";
 						}
 					}
 				},
