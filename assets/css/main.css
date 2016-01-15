@@ -26,7 +26,8 @@ html, body{
     -webkit-transition: color 0.4s;
     transition: color 0.4s;
 }
-.coke-main-nav .navbar-right > li > a:hover{
+.coke-main-nav .navbar-right > li > a:hover,
+.coke-main-nav .navbar-right > li > a:focus{
 	color:#E50000;
 }
 
@@ -125,6 +126,14 @@ html, body{
 .footer p{
 	margin:0px;
 	padding:0px;
+}
+
+/* General Re-usable Classes */
+.home-modal{
+
+}
+.red-input{
+	border-color:#c12;
 }
 
 /*--- Media Queries --*/

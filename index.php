@@ -1,5 +1,5 @@
 <?php
-	//This is the main home page for the Coca Cola Site
+	//This is the main home page for the Lucero, LLC Site
 ?>
 <!DOCTYPE html>
 <html lang ='en'>
@@ -51,10 +51,10 @@
 					</ul>--> <!-- Save In case I come up with some use for this -->
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#">Sign In</a>
+							<a href="#" id='sign-in'>Sign In</a>
 						</li>
 						<li>
-							<a href="#">Sign Up</a>
+							<a href="#" class='register'>Sign Up</a>
 						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
@@ -68,7 +68,7 @@
 				<p class='text-center'>
 					Ei mei platonem senserit, legendos iracundia repudiandae ad qui, sed oratio dicant ut. 
 				</p>
-				<button class='btn btn-lg btn-reg'>Register</button>
+				<button class='btn btn-lg btn-reg register'>Register</button>
 			</div>	
 		</div><!-- /.promo -->
 		<div class='banner'>
