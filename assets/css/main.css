@@ -12,23 +12,24 @@ html, body{
 /*---- Main Navigation ----*/
 .navbar-default.coke-main-nav{
 	border-radius:0px;
-	background-color:#fefefe;
+	background-color:#333;
 	position: fixed;
 	width: 100%;
 	z-index: 100;
+	border-color:#333;
 }
 .coke-main-nav .container .navbar-header .navbar-brand img{
 	height:45px;
 	margin-top:-10px;
 }
 .coke-main-nav .navbar-right > li > a {
-    color: #555;
+    color: #fefefe;
     -webkit-transition: color 0.4s;
     transition: color 0.4s;
 }
 .coke-main-nav .navbar-right > li > a:hover,
 .coke-main-nav .navbar-right > li > a:focus{
-	color:#E50000;
+	color:#d0bfaa;
 }
 
 /*-------- Content --------*/
@@ -84,7 +85,7 @@ html, body{
     transition: background-color 0.4s;
 }
 .promo .btn-reg:hover{
-	background-color: #c53232;
+	background-color: #a6865e;
 }
 
 /*--- Banner --*/
@@ -118,7 +119,7 @@ html, body{
 /*--- Footer Section --*/
 .footer{
 	position: relative;
-	background-color: #aaa;
+	background-color: #333;
 	padding:10px;
 	font-size:12px;
 	color:#fff;

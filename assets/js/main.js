@@ -64,10 +64,15 @@ $(document).ready(function(){
 						var username = $('#username').val();
 						var password = $("#password").val();
 						var valid = false; //Use to detertmine whether the account info is valid
+						var org = ""; //The company account that is being sign into
 
 						if(username.length!== 0 && password.length !== ""){
 							//Here I will need to post the values, check the database, return some value, and send them to the proper page.
-							valid = true; //Hard code for GUI TESTING.
+
+							if(username.toLowerCase() == "cola" && password.toLowerCase() == "demo"){
+								valid = true; //Hard code for GUI TESTING.
+								org = "coca-cola"; //This will be the path to the companies page/solutions
+							}
 						}
 						
 						if(valid === false){
@@ -76,7 +81,7 @@ $(document).ready(function(){
 							return false; //Use this to prevent the modal from closing
 						}
 						else{
-							window.location = "file:///Users/glenlucero/Lucero/orgs/coca-cola/index.html";
+							window.location = "file:///Users/glenlucero/Lucero/orgs/"+org+"/index.html";
 						}
 					}
 				},
