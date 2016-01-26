@@ -11,8 +11,8 @@
 		
 		<!-- Third Party Styles -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-		<link rel='stylesheet' href='/Users/glenlucero/Coca-Cola/assets/plugins/bootstrap-3.3.6/css/bootstrap.min.css'>
-		<link rel='stylesheet' href='/Users/glenlucero/Coca-Cola/assets/plugins/font-awesome-4.5.0/css/font-awesome.min.css'>
+		<link rel='stylesheet' href='/Users/glenlucero/Lucero/assets/plugins/bootstrap-3.3.6/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='/Users/glenlucero/Lucero/assets/plugins/font-awesome-4.5.0/css/font-awesome.min.css'>
 
 		<!-- Custom Styles -->
 		<link rel='stylesheet' href='assets/css/main.css'>
@@ -39,13 +39,12 @@
 					</ul>-->
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom Sofware<span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Training Module</a></li>
-								<li><a href="#">Venedor Store</a></li>
-								<li><a href="#">Something Else</a></li>
+								<li><a class="solution" href="#" data-path="" data-page="home">Home</a></li>
+								<li><a class="solution" href="#" data-path="solutions/training-management/" data-page="index.html">Training Management</a></li><!--Change this .html to .php-->
 								<li role="separator" class="divider"></li>
-								<li><a href="#">Submit Request</a></li>
+								<li><a href="#" id='request-module'>Submit Request</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -84,8 +83,9 @@
 			</div>
 		</div><!--/.footer-->
 	</body>
-	<script type='text/Javascript' src='/Users/glenlucero/Coca-Cola/assets/js/jquery-1.12.0.min.js'></script>
-	<script type='text/Javascript' src='/Users/glenlucero/Coca-Cola/assets/plugins/bootstrap-3.3.6/js/bootstrap.min.js'></script>
-	<script type='text/Javascript' src='/Users/glenlucero/Coca-Cola/assets/plugins/bootbox.min.js'></script>
+	<script type='text/Javascript' src='/Users/glenlucero/Lucero/assets/js/jquery-1.12.0.min.js'></script>
+	<script type='text/Javascript' src='/Users/glenlucero/Lucero/assets/plugins/bootstrap-3.3.6/js/bootstrap.min.js'></script>
+	<script type='text/Javascript' src='/Users/glenlucero/Lucero/assets/plugins/bootbox.min.js'></script>
+	<script type='text/Javascript' src='/Users/glenlucero/Lucero/assets/js/navbar.js'></script>
 	<script type='text/javascript' src='assets/js/main.js'></script>
 </html>

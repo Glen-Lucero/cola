@@ -48,7 +48,7 @@ $(document).ready(function(){
 			title: "Login",
 			message: "<form id='login'>"+
 						"<div class='form-group'>"+
-							"<label for='username'>Email</label>"+
+							"<label for='username'>Username</label>"+
 							"<input name='username' id='username' class='form-control'/>"+
 						"</div>"+
 						"<div class='form-group'>"+

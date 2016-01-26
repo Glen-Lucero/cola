@@ -1,3 +1,4 @@
+/*---CSS FOR ALL Coke East Hartford Project -----*/
 html, body{
 	font-family: 'Open Sans', sans-serif;
 	color:#000;
@@ -7,6 +8,10 @@ html, body{
 	width: 100%;
 	background-color: #fafafa;
 	overflow: scroll;
+}
+
+#pseudo-body{
+	min-height: 600px;
 }
 
 /*---- Main Navigation ----*/
@@ -97,4 +102,17 @@ html, body{
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+}
+
+
+/*======= This is the css for the training Module ===========*/
+div.training-management .container{
+	padding-top:100px;
+}
+div.training-management .container button.btn-training-opt{
+	width:150px;
+	margin-bottom:10px;
+}
+div.training-management .container h4.form-section{
+	color:#E50000;
 }

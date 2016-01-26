@@ -1,0 +1,270 @@
+	<!-- Custom Styles -->
+	<link rel='stylesheet' href='assets/css/main.css'>
+
+<div class='training-management'>
+	<div class='container'>
+		<div class='col-sm-8 col-sm-offset-2'>
+			<div class='panel panel-default'>
+				<div class="panel-heading text-center">
+					Training Management Options
+				</div>
+				<div class='panel-body'>
+					<div class='tab-content'>
+						<div role="tab-panel" class='tab-pane fade in active' id='home'>
+							<div class='col-sm-6 text-center'>
+								<button href="#add-emp" aria-controls='add-emp' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Add Employee</button>
+							</div>
+							<div class='col-sm-6 text-center'>
+								<button href="#edit-emp" aria-controls='edit-emp' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Edit Employee</button>
+							</div>
+							<div class='col-sm-6 text-center'>
+								<button href="#log-trn" aria-controls='log-trn' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Log In Training</button>
+							</div>
+							<div class='col-sm-6 text-center'>
+								<button href="#add-trn" aria-controls='add-trn' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Add Training</button>
+							</div>
+							<div class='col-sm-6 text-center'>
+								<button href="#disqualify" aria-controls='disqualify' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Disqualify</button>
+							</div>
+							<div class='col-sm-6 text-center'>
+								<button href="#reports" aria-controls='reports' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Reports</button>
+							</div>
+						</div>
+						<div role="tab-panel" class='tab-pane fade in' id='add-emp'>
+							<form id='add-emp-form'>
+								<h4 class='form-section'>Plant Level</h4>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='l-name'>Last Name</label>
+										<input name='l-name' id='l-name' class='form-control'/>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='f-name'>First Name</label>
+										<input type='text' name='f-name' id='f-name' class='form-control'/>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='department'>Department</label>
+										<select class='form-control' name="department" id="department">
+											<option id='production'>Production</option>
+											<option id='admin'>Admin</option>
+											<option id='maintenance'>Maintenance</option>
+											<option id='warehouse'>Warehouse</option>
+											<option id='qa'>QA</option>
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='department'>Role</label>
+										<select class='form-control disabled' name="role" id="role">
+											<!-- This will be dynamic -->
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='f-name'>Assigned</label>
+										<input type='password' name='assigned' id='assigned' class='form-control' readonly/>
+									</div>
+								</div>
+								<div class='row'></div>
+								<h4 class='form-section'>TPM Level</h4>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='pillar'>Pillar Team</label>
+										<select class='form-control' name="pillar" id="pillar">
+											<option id='am'>AM</option>
+											<option id='pm'>PM</option>
+											<option id='fi'>FI</option>
+											<option id='te'>T&amp;E</option>
+											<option id='eem'>EEM</option>
+											<option id='none'>None</option>
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='pillar'>TPM Pillar Role</label>
+										<select class='form-control' name="pillar-role" id="pillar-role">
+											<!-- NEED TO ADD OPTIONS -->
+										</select>
+									</div>
+								</div>
+							</form>
+							<div class='col-sm-4 text-center'>
+								<button class='btn btn-danger btn-training-opt clear'>Clear</button>
+							</div>
+							<div class='col-sm-4 text-center'>
+								<button href="#home" aria-controls='home' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Back</button>
+							</div>
+							<div class='col-sm-4 text-center'>
+								<button class='btn btn-success btn-training-opt' id='submit-add-emp'>Add</button>
+							</div>
+						</div>
+						<div role="tab-panel" class='tab-pane fade in' id='edit-emp'>
+							<form id='edit-emp-form'>
+								<h4 class='form-section'>Plant Level</h4>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='emp-name'>Employee Name</label>
+										<select class='form-control' id='emp-name' name='emp-name'>
+											<!-- THIS WILL BE PULLED FROM THE DB DYNAMICALLY-->
+											<option>George Washington</option>
+											<option>Thomas Jefferson</option>
+											<option>Benjamin Franklin</option>
+											<option>John Hancock</option>
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='department'>Department</label>
+										<select class='form-control' name="department" id="department">
+											<option id='production'>Production</option>
+											<option id='admin'>Admin</option>
+											<option id='maintenance'>Maintenance</option>
+											<option id='warehouse'>Warehouse</option>
+											<option id='qa'>QA</option>
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='department'>Role</label>
+										<select class='form-control disabled' name="role" id="role">
+											<!-- This will be dynamic -->
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='f-name'>Assigned</label>
+										<input type='password' name='assigned' id='assigned' class='form-control' readonly/>
+										<br>
+										<button class='btn btn-default' id='assign-code'>Assign Barcode</button>
+									</div>
+								</div>
+								<h4 class='form-section'>TPM Level</h4>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='pillar'>Pillar Team</label>
+										<select class='form-control' name="pillar" id="pillar">
+											<option id='am'>AM</option>
+											<option id='pm'>PM</option>
+											<option id='fi'>FI</option>
+											<option id='te'>T&amp;E</option>
+											<option id='eem'>EEM</option>
+											<option id='none'>None</option>
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='pillar'>TPM Pillar Role</label>
+										<select class='form-control' name="pillar-role" id="pillar-role">
+											<!-- NEED TO ADD OPTIONS -->
+										</select>
+									</div>
+								</div>
+							</form>
+							<div class='col-sm-4 text-center'>
+								<button class='btn btn-danger btn-training-opt' id='disable-emp'>Disable Employee</button>
+							</div>
+							<div class='col-sm-4 text-center'>
+								<button href="#home" aria-controls='home' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Back</button>
+							</div>
+							<div class='col-sm-4 text-center'>
+								<button class='btn btn-success btn-training-opt' id='submit-edit-emp'>Save</button>
+							</div>
+						</div>
+						<div role="tab-panel" class='tab-pane fade in' id='log-trn'>
+							<p>This is the Log in training GUI</p>
+							<div class='col-xs-12 text-center'>
+								<button href="#home" aria-controls='home' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Back</button>
+							</div>
+						</div>
+						<div role="tab-panel" class='tab-pane fade in' id='add-trn'>
+							<form id='add-trn-form'>
+								<h4 class='form-section'>Add a Training</h4>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='trn-topic'>Training Topic</label>
+										<input type='text' name='trn-topic' id='trn-topic' class='form-control'/>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='role'>Applicable Role</label>
+										<select class='form-control' id='role' name='role'>
+											<!-- THIS WILL BE PULLED FROM THE DB DYNAMICALLY-->
+											<option>Role 1</option>
+											<option>Role 2</option>
+											<option>Role 3</option>
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='freq'>Frequency (in weeks)</label>
+										<input name="freq" class='form-control' id='freq'/>
+									</div>
+								</div>
+								<div class='row'></div>
+							</form>
+							<div class='col-sm-6 text-center'>
+								<button href="#home" aria-controls='home' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Back</button>
+							</div>
+							<div class='col-sm-6 text-center'>
+								<button class='btn btn-success btn-training-opt' id='submit-new-trn'>Save</button>
+							</div>
+						</div>
+						<div role="tab-panel" class='tab-pane fade in' id='disqualify'>
+							<form id='disqualify-from'>
+								<h4 class='form-section'>Disqualify A Training</h4>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='emp-name'>Employee Name</label>
+										<select class='form-control' id='emp-name' name='emp-name'>
+											<!-- THIS WILL BE PULLED FROM THE DB DYNAMICALLY-->
+											<option>George Washington</option>
+											<option>Thomas Jefferson</option>
+											<option>Benjamin Franklin</option>
+											<option>John Hancock</option>
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='emp-trn'>Training</label>
+										<select class='form-control' id='emp-trn' name='emp-trn'>
+											<!-- THIS WILL BE PULLED FROM THE DB DYNAMICALLY, ONLY SHOWING TRAININGS THAT THE EMPLOYESS HAS RECENTLY COMPLETED-->
+											<option>Food Safety</option>
+											<option>Business Processes</option>
+											<option>Local Safety Rules</option>
+										</select>
+									</div>
+								</div>
+							</form>
+							<div class='col-sm-6 text-center'>
+								<button href="#home" aria-controls='home' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Back</button>
+							</div>
+							<div class='col-sm-6 text-center'>
+								<button class='btn btn-default btn-training-opt btn-danger' id='disqualify-btn'>Disqualify</button>
+							</div>
+						</div>
+						<div role="tab-panel" class='tab-pane fade in' id='reports'>
+							<p>This is the reports GUI</p>
+							<div class='col-xs-12 text-center'>
+								<button href="#home" aria-controls='home' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Back</button>
+							</div>
+						</div>
+					</div>
+				</div><!-- /.panel-body -->
+			</div>
+		</div>
+	</div><!-- /.container-->
+</div><!-- /.training-management-->
