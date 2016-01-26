@@ -28,7 +28,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#">
-						<img alt="Coca-Cola" src='assets/img/coke-logo1.png'>
+						<img alt="Lucero" src='assets/img/lucero-logo.png'>
 					</a>
 				</div>
 				<div class="collapse navbar-collapse" id="main-nav">
@@ -105,6 +105,7 @@
 		<div class='footer'>
 			<div class='container'>
 				<div class='col-xs-6 text-left'>
+					
 					<p>&copy; Lucero, LLC - All Rights Reserved</p>
 				</div>
 				<div class='col-xs-6 text-right'>

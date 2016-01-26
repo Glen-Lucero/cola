@@ -93,10 +93,10 @@
 								</div>
 							</form>
 							<div class='col-sm-4 text-center'>
-								<button class='btn btn-danger btn-training-opt clear'>Clear</button>
+								<button href="#home" aria-controls='home' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Back</button>
 							</div>
 							<div class='col-sm-4 text-center'>
-								<button href="#home" aria-controls='home' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Back</button>
+								<button class='btn btn-danger btn-training-opt clear'>Clear</button>
 							</div>
 							<div class='col-sm-4 text-center'>
 								<button class='btn btn-success btn-training-opt' id='submit-add-emp'>Add</button>
@@ -169,10 +169,10 @@
 								</div>
 							</form>
 							<div class='col-sm-4 text-center'>
-								<button class='btn btn-danger btn-training-opt' id='disable-emp'>Disable Employee</button>
+								<button href="#home" aria-controls='home' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Back</button>
 							</div>
 							<div class='col-sm-4 text-center'>
-								<button href="#home" aria-controls='home' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Back</button>
+								<button class='btn btn-danger btn-training-opt' id='disable-emp'>Disable Employee</button>
 							</div>
 							<div class='col-sm-4 text-center'>
 								<button class='btn btn-success btn-training-opt' id='submit-edit-emp'>Save</button>
@@ -254,9 +254,124 @@
 							</div>
 						</div>
 						<div role="tab-panel" class='tab-pane fade in' id='reports'>
-							<p>This is the reports GUI</p>
-							<div class='col-xs-12 text-center'>
+							<form id='reports-form'>
+								<h4 class='form-section'>Reports</h4>
+								<div class='col-sm-6'>
+									<div class="radio">
+										<label>
+											<input type="radio" name="report-type" value="past-due">
+											Past Due
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="report-type" value="open">
+											Open
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="report-type" value="compliance">
+											% of Compliance
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="report-type" value="trn-roster">
+											Training Roster
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="report-type" value="completed-hrs">
+											Completed Training Hours
+										</label>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class="radio">
+										<label>
+											<input type="radio" name="report-specs" value="plant-wide">
+											Plant Wide
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="report-specs" value="department-wide">
+											By Department
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="report-specs" value="tpm-wide">
+											By TPM Pillar
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="report-specs" value="emp-wide">
+											By Employee Name
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="report-specs" value="trn-wide">
+											By Training Topic
+										</label>
+									</div>
+								</div>
+								<h4 class='form-section'>User Specifics</h4>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='department'>Department</label>
+										<select class='form-control' id='department' name='department'>
+											<option id='production'>Production</option>
+											<option id='admin'>Admin</option>
+											<option id='maintenance'>Maintenance</option>
+											<option id='warehouse'>Warehouse</option>
+											<option id='qa'>QA</option>
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='tpm-pillar'>TPM Pillar</label>
+										<select class='form-control' id='tpm-pillar' name='tpm-pillar'>
+											
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='month'>Month</label>
+										<select class='form-control' id='month' name='month'>
+											<option id="jan">January</option>
+											<option id="feb">February</option>
+											<option id="mar">March</option>
+											<option id="apr">April</option>
+											<option id="may">May</option>
+											<option id="jun">June</option>
+											<option id="jul">July</option>
+											<option id="aug">August</option>
+											<option id="sep">September</option>
+											<option id="oct">October</option>
+											<option id="nov">November</option>
+											<option id="dec">December</option>
+										</select>
+									</div>
+								</div>
+								<div class='col-sm-6'>
+									<div class='form-group'>
+										<label for='year'>Year</label>
+										<input name='year' id='year' type='text' class='form-control'/>
+									</div>
+								</div>
+							</form>
+							<div class='col-sm-6 text-center'>
 								<button href="#home" aria-controls='home' role='tab' data-toggle='tab' class='btn btn-default btn-training-opt'>Back</button>
+							</div>
+							<div class='col-sm-6 text-center'>
+								<button class='btn btn-success btn-training-opt' id='submit-report'>Generate Report</button>
 							</div>
 						</div>
 					</div>
